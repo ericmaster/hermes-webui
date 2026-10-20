@@ -5,6 +5,8 @@
 
 ### Changed
 
+- Explicitly preserve full release history in `CHANGELOG.md` while keeping specs and other non-ADR docs current-state only.
+
 - **Docs: reconciled the assistant-reply lifecycle RFCs/contracts with shipped behavior.** The Stable Assistant Turn Anchors and Live-to-Final RFCs, `docs/CONTRACTS.md`, and the Phase 0 architecture inventory were updated from "proposed/scaffold" framing to "accepted/implemented" to match what actually ships (single assistant-turn owner projecting one `activity_scene_v1` into Compact Worklog / Transparent Stream / Final answer). Documentation-only — no runtime behavior or CI-gate change; the one code touch is a corrected comment header in `static/assistant_turn_anchors.js`. Remaining hardening stays tracked under #3400. Thanks @franksong2702. (#6144)
 
 ### Fixed
